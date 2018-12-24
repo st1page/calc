@@ -30,7 +30,7 @@
 #define RSH			29 //	>>  
 
 #define LESS		30 //	<
-#define GREATEQ		31 //	>
+#define GREATER		31 //	>
 #define EQUALEQ		32 //	==
 #define NOTEQ		33 //	!=
 #define LESSEQ		34 //	<=
