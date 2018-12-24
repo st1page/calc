@@ -1,7 +1,9 @@
-#ifndef TOKEN_H
-#define TOKEN_H
+#ifndef _TOKEN_H_
+#define _TOKEN_H_
 
-#define NAME		5
+#include <string>
+
+#define NAME		5	
 #define NUMBER		6
 #define STRING		7
 
@@ -40,5 +42,19 @@
 #define OR			38 //	||
 #define NOT			39 //	!
 
+#define RARROW		40 //	=>
 
+#define ENDSYMBOL	63
+
+struct Token{
+	unsigned char type;
+	std::string data;
+	Token(unsigned char t,std::string &d){
+		type = t;
+		data = d;
+	}
+	~Token(){
+		std::string().swap(data);	
+	}
+};
 #endif
