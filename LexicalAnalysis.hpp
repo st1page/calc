@@ -1,11 +1,19 @@
+#ifndef _LEXICALANALTSIS_HPP_
+#define _LEXICALANALTSIS_HPP_
+
 #include "token.h"
+#include "MyException.hpp"
+
+#include <cctype>
 
 #include <string>
 #include <vector>
 #include <queue>
+
+
 class LexicalAnalysis{
 private:
-	enum State{ Normal, Identifier, Number, Sign, Space};	
+	enum State{ Normal, Identifier, Number,NumberE, Sign, Sign2, Space};	
 	State state;
 	std::string readBuffer;
 	std::queue<Token> tokenBuffer;
@@ -38,8 +46,14 @@ private:
 			case Number:
 
 				break; 
+			case NumberE:
+
+				break;
 			case Sign:
 
+				break;
+			case Sign2:
+				
 				break;
 			case Space:
 
@@ -50,4 +64,4 @@ private:
 public:
 
 };
- 
+#endif
