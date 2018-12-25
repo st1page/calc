@@ -53,6 +53,7 @@ inline unsigned char signType(char c){
 		case '$': return DOLLAR; break;
 		case '!': return NOT; break;
 	}
+	return 0;
 }
 inline unsigned char doubleSignType(char c1,char c2){
 	switch(c1){

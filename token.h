@@ -3,7 +3,7 @@
 
 #include <string>
 
-#define NAME		5	
+#define IDENT		5	
 #define NUMBER		6
 #define STRING		7
 
@@ -45,6 +45,7 @@
 #define RARROW		40 //	=>
 
 #define ENDSYMBOL	63
+
 
 struct Token{
 	unsigned char type;
